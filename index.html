@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peperoncino.uy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- inicio GRILLA -->
+    <div id="grilla">
+
+        <!--inicio headder-->
+        <!-- identificador de estilo del encabezado css -->
+        <header class="header">
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+                <div class="container-fluid nav">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logo-verde.jpg" alt="logo peperoncino">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html"> Nosotros</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/cafe.html">Cafe</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- inicio nav -->
+            
+            <!-- <a href="./index.html">
+                <img src="./img/logo-verde.jpg" alt="logo peperoncino">
+            </a>
+
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./pages/noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./pages/cafe.html">Cafe</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav> -->
+
+        </header>
+
+        <!-- fin headder -->
+        <!-- inicio banner -->
+
+        <main class="main">
+
+            <!-- <div class="div-banner">
+
+                <img class="img-banner" src="./img/mostrador.jpeg.jpg" alt="nuestro-cafe">
+                <h1 class="title-banner">Bienvenidos a nuestra web!</h1>
+
+            </div> -->
+
+            <div id="carouselExample" class="carousel slide div-banner">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/mostrador.jpeg.jpg" class="d-block w-100 img-banner" alt="nuestra mesada">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/djevento2personas.jpg.jpg" class="d-block w-100 img-banner" alt="foto evento">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/vermut-rooster.jpg.JPG" class="d-block w-100 img-banner" alt="tragos">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- fin banner -->
+
+
+            <!-- inicio seccion pag principal. -->
+
+            <section class="main-section">
+                <ul>
+                    <li>
+                        <Article class="main-section-article">
+                            <img class="section-article-img" src="./img/flat-dulces.jpeg.jpeg" alt="img cafe">
+                            <p class="section-article-p">Los mejores cafes!</p>
+                        </Article>
+                    </li>
+
+                    <li>
+                        <Article class="main-section-article">
+                            <img class="section-article-img" src="./img/puerta.jpeg.jpg" alt="img puerta del local">
+                            <p class="section-article-p">La mejor compa;ia!</p>
+                        </Article>
+                    </li>
+
+                    <li>
+                        <Article class="main-section-article">
+                            <img class="section-article-img" src="./img/ensalada.jpeg.jpeg" alt="ensalada del dia">
+                            <p class="section-article-p">La comida mas rica!</p>
+                        </Article>
+                    </li>
+                </ul>
+
+            </section>
+        </main>
+
+
+        <!-- inicio footer -->
+        <footer class="footer">
+
+            <!-- logo del footer -->
+            <img class="footer-img" src="./img/sticker-verde.jpg" alt="logo peperoncino">
+
+            <p class="footer-text">Gracias por preferirnos.</p>
+
+            <!-- redes sociales -->
+            <ul>
+
+                <li>
+                    <a href="https://www.instagram.com/peperoncino.uy/" target="_blank">Instagram
+                        <img src="./img/icons8-instagram-50.png.png" alt="logo de instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.Whatsapp.com" target="_blank">Whatsapp
+                        <img src="./img/icons8-whatsapp-50.png.png" alt="logo de Whatsapp">
+                    </a>
+                </li>
+
+            </ul>
+            <!-- fin redes sociales -->
+
+
+        </footer>
+        <!-- fin footer -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
+
+
+<!-- WhatsApp icon by Icons8 -->
+<!-- Instagram icon by Icons8 -->
