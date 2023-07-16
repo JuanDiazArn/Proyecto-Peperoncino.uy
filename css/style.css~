@@ -94,11 +94,13 @@ p {
   border-bottom: 2px solid #82B131;
   transition: all 0.5s ease;
 }
-.header a {
+
+.a {
   color: black;
   text-decoration: none;
 }
-.header .nav-list-item:hover a {
+
+.nav-list-item:hover a {
   border-color: black;
 }
 
@@ -133,17 +135,25 @@ p {
   justify-content: center;
   gap: 2px;
 }
+
+.main-section ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 .main-section-article {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main-section-article-img {
+
+.section-article-img {
   width: 400px;
   height: 250px;
   border-radius: 8px;
 }
-.main-section-article-p {
+
+.section-article-p {
   margin-top: 10px;
   text-align: center;
   font-weight: 700;
@@ -399,4 +409,4 @@ p {
 .color-theme_Jardin-mediterraneo-colores-4-hex { color: #E3AE44; } CREMA
 .color-theme_Jardin-mediterraneo-colores-5-hex { color: #82B131; } VERDE */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css~.map */
