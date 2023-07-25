@@ -74,16 +74,24 @@
 
         <main class="main">
 
+            <h1 class="banner-title">Bienvenidos a nuestra web!</h1>
+            
             <div id="carouselExample" class="carousel slide div-banner">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
                         <img src="./img/mostrador.jpeg.jpg" class="d-block w-100 img-banner" alt="nuestra mesada">
+                        </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item d-flex">
+                        <div class="d-flex justify-content-center">
                         <img src="./img/djevento2personas.jpg.jpg" class="d-block w-100 img-banner" alt="foto evento">
+                        </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item d-flex">
+                        <div class="d-flex justify-content-center">
                         <img src="./img/vermut-rooster.jpg.JPG" class="d-block w-100 img-banner" alt="tragos">
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -98,7 +106,7 @@
                 </button>
             </div>
 
-            <h1 class="title-banner">Bienvenidos a nuestra web!</h1>
+            
             <!-- fin banner -->
 
 
@@ -132,13 +140,16 @@
             </section>
         </main>
 
-        <section class="section-nosotros">
-            
-            <!-- imagen del local -->
-            <img src="./img/barra evento.jpeg.jpg" alt="img peperoncino">
+        <!-- inicio seccion NOSOTROS -->
 
+        <section class="section-nosotros">
+
+            <!-- imagen del local -->
+            <div class="contenedor-imagen">
+                <img src="./img/barra evento.jpeg.jpg" alt="img peperoncino" class="img-fluid">
+            </div>
             <!-- Introduccion de peperoncino -->
-            <p class="section-nosotros-p">
+            <p class="section-nosotros-text">
                 Nosotros somos peperoncino, una rostiseria y cafeteria ubicada en el barrio de pocitos en Montevideo,
                 Uruguay.
 
@@ -161,66 +172,23 @@
 
             <div class="iframe-spotify">
                 <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/playlist/049urHi71MsYHZfRlvGqn3?utm_source=generator&theme=0"
-                    width="25%" height="135" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-                </iframe>
+                    src="https://open.spotify.com/embed/playlist/049urHi71MsYHZfRlvGqn3?utm_source=generator"
+                    width="100%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
             </div>
-        
+
         </section>
 
         <!-- fin seccion nosotros -->
 
         <!-- inicio seccion productos -->
-        
-        <section class="productos">
-        
-            
-            <div class="card" style="width: 18rem;">
-                <img src="../img/tartazapallitos.jpeg.jpg" class="card-img-top" alt="img tartas">
-                <div class="card-body">
-                <p class="card-text">Lo mejor de los Miercoles, la clasica milanesa con pure de papas o ensalada.</p>
-                </div>
-            </div>
-    
-            
-            
-            <div class="card" style="width: 18rem;">
-                <img src="../img/frbondiola.jpeg.jpg" class="card-img-top" alt="img focaccias">
-                <div class="card-body">
-                <p class="card-text">Nustra especialidad, focaccias rellenas , frescas y contundantes.</p>
-                </div>
-            </div>
-            
-            
-            
-            
-            
-            <div class="card" style="width: 18rem;">
-                <img src="../img/milanesa.jpeg.JPG" class="card-img-top" alt="img especiales">
-                <div class="card-body">
-                <p class="card-text">Lo mejor de los Miercoles, la clasica milanesa con pure de papas o ensalada.</p>
-                </div>
-            </div>
-    
-    
-    
-            
-            <div class="card" style="width: 18rem;">
-                <img src="../img/budinbanana.jpeg.jpeg" class="card-img-top" alt="img dulces">
-                <div class="card-body">
-                <p class="card-text">Algunas de nuestras cosas dulces, un delicioso budin de banana.</p>
-                </div>
-            </div>
-    
-        </section>
-        <!-- fin seccion NOSOTROS -->
 
-        <!-- incio seccion PRODUCTOS -->
         <section class="productos">
 
+
             <div class="card" style="width: 18rem;">
-                <img src="../img/tartazapallitos.jpeg.jpg" class="card-img-top" alt="img tartas">
+                <img src="./img/tartazapallitos.jpeg.jpg" class="card-img-top" alt="img tartas">
                 <div class="card-body">
                     <p class="card-text">Lo mejor de los Miercoles, la clasica milanesa con pure de papas o ensalada.
                     </p>
@@ -228,14 +196,14 @@
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="../img/frbondiola.jpeg.jpg" class="card-img-top" alt="img focaccias">
+                <img src="./img/frbondiola.jpeg.jpg" class="card-img-top" alt="img focaccias">
                 <div class="card-body">
                     <p class="card-text">Nustra especialidad, focaccias rellenas , frescas y contundantes.</p>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="../img/milanesa.jpeg.JPG" class="card-img-top" alt="img especiales">
+                <img src="./img/milanesa.jpeg.JPG" class="card-img-top" alt="img especiales">
                 <div class="card-body">
                     <p class="card-text">Lo mejor de los Miercoles, la clasica milanesa con pure de papas o ensalada.
                     </p>
@@ -243,19 +211,18 @@
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="../img/budinbanana.jpeg.jpeg" class="card-img-top" alt="img dulces">
+                <img src="./img/budinbanana.jpeg.jpeg" class="card-img-top" alt="img dulces">
                 <div class="card-body">
                     <p class="card-text">Algunas de nuestras cosas dulces, un delicioso budin de banana.</p>
                 </div>
             </div>
 
         </section>
-
         <!-- fin seccion PRODUCTOS -->
 
         <!-- inicio seccion NOTICIAS Y EVENTOS -->
 
-        <section>
+        <section class="section-noticias">
             <!-- inicio articulo instagram -->
             <article class="article-instagram">
                 <!-- inicio enlace instagram -->
@@ -284,9 +251,9 @@
                 text-align: center;
                 text-decoration: none;
                 width: 100%;
-              " target="_blank">
+                " target="_blank">
                             <div style="
-                  display: flex;
+                display: flex;
                   flex-direction: row;
                   align-items: center;
                 ">
@@ -492,75 +459,83 @@
 
             <!-- Articulo foto eventos -->
             <article class="article-eventos">
-                <img src="./img/djevento2personas.jpg.jpg" alt="dj en evento." />
+                <div class="contenedor-imagen">
+                    <img src="./img/djevento2personas.jpg.jpg" alt="dj en evento." class="img-fluid" />
+                </div>
+
                 <p>
                     Si te gustaria ser parte de un evento no te olvides de dejarnos tu
                     comentario!
                 </p>
-                <img src="../img/evento-puerta.jpg.JPG" alt="evento en Peperoncino" />
+
+                <div class="contenedor-imagen">
+                    <img src="./img/evento-puerta.jpg.JPG" alt="evento en Peperoncino" class="img-fluid" />
+                </div>
+
             </article>
         </section>
-    
-
-    <!-- fin seccion NOTICIAS Y EVENTOS -->
-
-    <!-- inicio seccion CAFE -->
-    
-    <section class="section-cafe">
-
-        <!-- logo CDM -->
-        <a href="https://www.cafedomercado.uy/" target="_blank">
-            <img src="../img/cafedumercado-logo.jpg" alt="logo cafe du mercado">
-        </a>
-        
-        <!-- parrafo para explicar el CDM y nuestros cafes mas pedidos. -->
-        <p>Te servimos cafe de especialidad. El cafeiro es un cafe cerfiticado por BSCA para espresso, de proceso
-            natural y con acentuada dulzura. Podras disfrutar del cafe mas rico en un cappuccino, espresso, icedcoffee,
-            entre otros.</p>
-        
-        <!-- video de cafe -->
-        <video src="../video/cafe.mp4.mp4" width="200px" height="200px"> </video>
 
 
-    </section>
+        <!-- fin seccion NOTICIAS Y EVENTOS -->
 
-    <!-- fin seccion CAFE -->
+        <!-- inicio seccion CAFE -->
 
-    <!-- inicio seccion CONTACTO -->
+        <section class="section-cafe">
 
-    <!-- inicio formulario-->
-    <section class="section-formulario">
-        <form action="narnia" method="post">
-            <p>Dejanos tu comentario</p>
-            <textarea name="Escribe tu comentario" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
-    <!-- fin formulario -->
+            <!-- logo CDM -->
+            <a href="https://www.cafedomercado.uy/" target="_blank">
+                <img src="./img/cafedumercado-logo.jpg" alt="logo cafe du mercado">
+            </a>
 
-    <!-- inicio imagen -->
-    <div class="img-contacto">
-        <img src="../img/vitrinadulces.jpeg.jpg" alt="nuestra vitrina">
-    </div>
+            <!-- parrafo para explicar el CDM y nuestros cafes mas pedidos. -->
+            <p>Te servimos cafe de especialidad. El cafeiro es un cafe cerfiticado por BSCA para espresso, de proceso
+                natural y con acentuada dulzura. Podras disfrutar del cafe mas rico en un cappuccino, espresso,
+                icedcoffee,
+                entre otros.</p>
 
-    <!-- fin seccion CONTACTO -->
+            <!-- video de cafe -->
+            <video src="./video/cafe.mp4.mp4" width="200px" height="200px"> </video>
 
 
+        </section>
+
+        <!-- fin seccion CAFE -->
+
+        <!-- inicio seccion CONTACTO -->
+        <section class="section-contacto">
+            <!-- inicio formulario-->
+            
+            <div class="mb-3 formulario">
+                <p>Dejanos tu comentario</p>
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <input type="submit" value="Enviar">
+            </div>
+            
+            <div class="contacto-container-img">
+                <img src="./img/vitrinadulces.jpeg.jpg" alt="nuestra vitrina" class="contacto-img">
+            </div>
+        </section>
+
+        <!-- fin seccion CONTACTO -->
 
 
 
-    <!-- inicio footer -->
-    <footer class="footer">
 
-        <!-- logo del footer -->
-        <img class="footer-img" src="./img/sticker-verde.jpg" alt="logo peperoncino">
 
-        <p class="footer-text">Gracias por preferirnos.</p>
+        <!-- inicio footer -->
+        <footer class="footer">
+
+            <!-- logo del footer -->
+            <img class="footer-img" src="./img/sticker-verde.jpg" alt="logo peperoncino">
+
+            <p class="footer-text">Gracias por preferirnos.</p>
 
             <!-- redes sociales -->
             <ul class="footer-list">
                 <li class="footer-list-item">
-                    <a class="footer-list-item-link" href="https://www.instagram.com/peperoncino.uy/" target="_blank">Instagram
+                    <a class="footer-list-item-link" href="https://www.instagram.com/peperoncino.uy/"
+                        target="_blank">Instagram
                         <img src="./img/icons8-instagram-50.png.png" alt="logo de instagram">
                     </a>
                 </li>
@@ -573,8 +548,8 @@
             <!-- fin redes sociales -->
 
 
-    </footer>
-    <!-- fin footer -->
+        </footer>
+        <!-- fin footer -->
 
     </div>
 

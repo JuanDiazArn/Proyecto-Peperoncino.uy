@@ -1,0 +1,5 @@
+node_modules/
+
+.vsode/
+
+.DS_Store
