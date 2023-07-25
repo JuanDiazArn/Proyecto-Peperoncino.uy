@@ -1,0 +1,84 @@
+
+
+/* fuentes */
+@import "./utilities/variables";
+@import "./globals/resets";
+@import "./utilities/mixin";
+@import "./views/home";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+
+
+/* MEDIA QUERY */
+
+
+/* small devices (landcape phones, 576px and up) */
+// @media screen and (min-width: 320px) and (max-width: 576) {}
+
+/* medium devices (tablets, 577px and up) */
+
+// @media screen and (min-width: 577px) {}
+
+/* large devices (tablets, 769px and up) */
+
+/* @media screen and (min-width: 769px) {
+
+    #grilla {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+            "header header header header header header header header header header header header"
+            "header header header header header header header header header header header header"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "footer footer footer footer footer footer footer footer footer footer footer footer"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
+        row-gap: 0, .5 rem;
+    }
+} */
+
+/* x-large devices (desktops, 894px and up) */
+
+/* @media screen and (min-width: 894px) {
+
+    #grilla {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+            "header header header header header header header header header header header header"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "section section section section section section section section section section section section"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
+        row-gap: 0, .5 rem;
+
+        max-width: 1200px;
+        margin: 0 auto;
+
+    } */
+
+
+
+
+
+
+/* Color Theme Swatches in Hex */
+/* .color-theme_Jardin-mediterraneo-colores-2-hex { color: #DD3C32; } ROJO
+.color-theme_Jardin-mediterraneo-colores-3-hex { color: #DC802B; } MOSTAZA
+.color-theme_Jardin-mediterraneo-colores-4-hex { color: #E3AE44; } CREMA
+.color-theme_Jardin-mediterraneo-colores-5-hex { color: #82B131; } VERDE */
