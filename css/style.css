@@ -29,7 +29,7 @@ ul {
 .header {
   background-color: #82B131;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   display: flex;
@@ -66,7 +66,6 @@ ul {
 }
 .header nav .navbar-list-item {
   font-style: italic;
-  text-decoration: none;
   align-items: center;
   border-bottom: 2px solid #82B131;
   transition: all 0.5s ease;
@@ -89,7 +88,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem 5rem;
+  margin: 7rem 7rem;
 }
 .main .div-banner {
   display: flex;
@@ -97,15 +96,15 @@ ul {
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   width: 850px;
   height: 400px;
 }
 .main .div-banner .img-banner {
   max-width: 100%;
-  height: auto;
+  height: 30%;
   margin: 0 auto;
-  display: block;
+  object-fit: cover;
 }
 .main .banner-title {
   display: flex;
@@ -121,7 +120,7 @@ ul {
   justify-content: center;
   gap: 2px;
   flex-wrap: wrap;
-  margin: 5rem 5rem;
+  margin: 7rem 7rem;
 }
 .main-section-article {
   display: flex;
@@ -147,10 +146,17 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 5rem 5rem;
+  margin: 7rem 7rem;
 }
 .productos .card {
-  --bs-card-bg: #E3AE44;
+  --bs-card-bg: #e3ae44;
+  margin-top: 1rem;
+}
+.productos .card-img-top {
+  max-height: 118.83px;
+}
+.productos .card-body {
+  height: 250px;
 }
 .productos article {
   width: 300px;
@@ -168,15 +174,15 @@ ul {
   height: 50%;
 }
 
-/* incio estilo PRODUCTOS after bootstrap */
 /* fin estilo productos */
 /* inicio estilo NOSOTROS */
 .section-nosotros {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 3px;
   flex-wrap: wrap;
-  margin: 5rem 5rem;
+  margin: 7rem 7rem;
 }
 .section-nosotros-img {
   width: 50%;
@@ -214,7 +220,7 @@ ul {
 /* fin estilo nosotros */
 /* inicio estilo NOTICIAS */
 .section-noticias {
-  margin: 5rem 5rem;
+  margin: 7rem 7rem;
 }
 
 .article-instagram {
@@ -240,15 +246,24 @@ ul {
 .article-eventos img {
   justify-self: center;
   border-radius: 8px;
+  max-height: 800px;
+}
+.article-eventos .contenedor-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* fin estilo noticias */
 /* inicio estilo CAFE */
 .section-cafe {
-  margin: 5rem 5rem;
+  margin: 7rem 7rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 .section-cafe p {
@@ -261,7 +276,7 @@ ul {
 /* fin estilo cafe */
 /* inicio estilo CONTACTO */
 .section-contacto {
-  margin: 5rem 5rem;
+  margin: 7rem 7rem;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -346,7 +361,7 @@ ul {
 /* fin estilo footer */
 /* MEDIA QUERY */
 /* small devices (landcape phones, 576px and up) */
-@media screen and (min-width: 320px) and (max-width: 576) {
+@media screen and (min-width: 320px) and (max-width: 576px) {
   .header {
     background-color: #82B131;
     display: flex;
@@ -359,7 +374,7 @@ ul {
     height: auto;
   }
   .header img {
-    width: 2%;
+    width: 40%;
     height: auto;
     display: flex;
     border-radius: 80%;
@@ -367,7 +382,7 @@ ul {
   }
   .header nav {
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-family: "Roboto Mono", monospace;
     background-color: #82B131;
   }
@@ -399,59 +414,44 @@ ul {
   .header .nav-list-item:hover a {
     border-color: black;
   }
+  .footer {
+    background-color: #82B131;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  .footer-text {
+    text-align: center;
+    flex-grow: 1;
+    color: black;
+    align-items: flex-end;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 70px;
+  }
+  .footer-list-item {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  .footer-list-item-link {
+    color: black;
+    text-decoration: none;
+  }
 }
-/* medium devices (tablets, 577px and up) */
-/* large devices (tablets, 769px and up) */
-/* @media screen and (min-width: 769px) {
-
-    #grilla {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        grid-template-areas:
-            "header header header header header header header header header header header header"
-            "header header header header header header header header header header header header"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "footer footer footer footer footer footer footer footer footer footer footer footer"
-            "footer footer footer footer footer footer footer footer footer footer footer footer";
-        row-gap: 0, .5 rem;
-    }
-} */
-/* x-large devices (desktops, 894px and up) */
-/* @media screen and (min-width: 894px) {
-
-    #grilla {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        grid-template-areas:
-            "header header header header header header header header header header header header"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "footer footer footer footer footer footer footer footer footer footer footer footer";
-        row-gap: 0, .5 rem;
-
-        max-width: 1200px;
-        margin: 0 auto;
-
-    } */
-/* MEDIA QUERY */
-/* small devices (landcape phones, 576px and up) */
 /* medium devices (tablets, 577px and up) */
 /* large devices (tablets, 769px and up) */
 /* @media screen and (min-width: 769px) {
