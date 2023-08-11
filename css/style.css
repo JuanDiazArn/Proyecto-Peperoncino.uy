@@ -25,6 +25,17 @@ ul {
   list-style-type: none;
 }
 
+h2 {
+  color: #857712;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
 /* inicio estilo HEADER */
 .header {
   background-color: #82B131;
@@ -452,56 +463,16 @@ ul {
     text-decoration: none;
   }
 }
-/* medium devices (tablets, 577px and up) */
-/* large devices (tablets, 769px and up) */
-/* @media screen and (min-width: 769px) {
+#grilla {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-areas: "header header header header header header header header header header header header" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "footer footer footer footer footer footer footer footer footer footer footer footer";
+  row-gap: 0, 0.5 rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    #grilla {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        grid-template-areas:
-            "header header header header header header header header header header header header"
-            "header header header header header header header header header header header header"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "footer footer footer footer footer footer footer footer footer footer footer footer"
-            "footer footer footer footer footer footer footer footer footer footer footer footer";
-        row-gap: 0, .5 rem;
-    }
-} */
-/* x-large devices (desktops, 894px and up) */
-/* @media screen and (min-width: 894px) {
-
-    #grilla {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        grid-template-areas:
-            "header header header header header header header header header header header header"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "footer footer footer footer footer footer footer footer footer footer footer footer";
-        row-gap: 0, .5 rem;
-
-        max-width: 1200px;
-        margin: 0 auto;
-
-    } */
 /* Color Theme Swatches in Hex */
 /* .color-theme_Jardin-mediterraneo-colores-2-hex { color: #DD3C32; } ROJO
 .color-theme_Jardin-mediterraneo-colores-3-hex { color: #DC802B; } MOSTAZA

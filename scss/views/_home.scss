@@ -419,39 +419,8 @@
     }
 
 }
+// fin estilo footer mediaquery
 
-/* medium devices (tablets, 577px and up) */
-
-// @media screen and (min-width: 577px) {}
-
-/* large devices (tablets, 769px and up) */
-
-/* @media screen and (min-width: 769px) {
-
-    #grilla {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        grid-template-areas:
-            "header header header header header header header header header header header header"
-            "header header header header header header header header header header header header"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "footer footer footer footer footer footer footer footer footer footer footer footer"
-            "footer footer footer footer footer footer footer footer footer footer footer footer";
-        row-gap: 0, .5 rem;
-    }
-} */
-
-/* x-large devices (desktops, 894px and up) */
-
-/* @media screen and (min-width: 894px) {
 
     #grilla {
         display: grid;
@@ -475,4 +444,4 @@
         max-width: 1200px;
         margin: 0 auto;
 
-    } */
+    } 
