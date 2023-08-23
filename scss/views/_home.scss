@@ -115,8 +115,12 @@
     margin: $margin-sections $margin-sections;
 
     .card {
+        @include flex(null, null, null, null, wrap);
+        width: 20%;
         --bs-card-bg: #e3ae44;
         margin-top: 1rem;
+        border-radius: 10%;
+        border: 2px solid;
 
         &-img-top {
             max-height: 118.83px;
@@ -327,7 +331,7 @@
 /* small devices (landcape phones, 576px and up) */
 @media screen and (min-width: 320px) and (max-width: 576px) {
     
-    // estilo header mediaquery
+    // estilo header mediaquery small devices
 
     .header {
         background-color: $background-color;
@@ -381,7 +385,33 @@
             border-color: black;
         }
     }
-    
+    //fin estilo header media query 
+
+// estilo productos media query
+.productos {
+    @include flex(column, space-around, center, null, wrap);
+    align-items: center;
+    margin: $margin-sections $margin-sections;
+
+    .card {
+        @include flex(null, null, null, null, wrap);
+        width: 50%;
+        --bs-card-bg: #e3ae44;
+        margin-top: 1rem;
+        border-radius: 10%;
+        border: 2px solid;
+
+        &-img-top {
+            max-height: 118.83px;
+        }
+
+        &-body {
+            height: 250px;
+        }
+    }
+}   
+
+
     // estilo footer mediaquery
 
     .footer {
@@ -419,29 +449,34 @@
     }
 
 }
-// fin estilo footer mediaquery
+// fin estilo footer mediaquery small devices
 
+// inicio estilo mediaquery medium devices
 
-    #grilla {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        grid-template-areas:
-            "header header header header header header header header header header header header"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "section section section section section section section section section section section section"
-            "footer footer footer footer footer footer footer footer footer footer footer footer";
-        row-gap: 0, .5 rem;
+@media screen and (min-width: 577px) and (max-width: 1031px) {
 
-        max-width: 1200px;
-        margin: 0 auto;
+    // estilo productos
+.productos {
+    @include flex(column, space-around, center, null, wrap);
+    align-items: center;
+    margin: $margin-sections $margin-sections;
 
-    } 
+    .card {
+        @include flex(null, null, center, null, wrap);
+        width: 40%;
+        --bs-card-bg: #e3ae44;
+        margin-top: 1rem;
+        border-radius: 10%;
+        border: 2px solid;
+
+        &-img-top {
+            max-height: 118.83px;
+        }
+
+        &-body {
+            height: 250px;
+        }
+    }
+}   
+
+}

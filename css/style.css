@@ -160,8 +160,13 @@ h2 {
   margin: 7rem 7rem;
 }
 .productos .card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
   --bs-card-bg: #e3ae44;
   margin-top: 1rem;
+  border-radius: 10%;
+  border: 2px solid;
 }
 .productos .card-img-top {
   max-height: 118.83px;
@@ -425,6 +430,30 @@ h2 {
   .header .nav-list-item:hover a {
     border-color: black;
   }
+  .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 7rem 7rem;
+  }
+  .productos .card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    --bs-card-bg: #e3ae44;
+    margin-top: 1rem;
+    border-radius: 10%;
+    border: 2px solid;
+  }
+  .productos .card-img-top {
+    max-height: 118.83px;
+  }
+  .productos .card-body {
+    height: 250px;
+  }
   .footer {
     background-color: #82B131;
     padding: 20px;
@@ -463,16 +492,33 @@ h2 {
     text-decoration: none;
   }
 }
-#grilla {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-template-areas: "header header header header header header header header header header header header" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "section section section section section section section section section section section section" "footer footer footer footer footer footer footer footer footer footer footer footer";
-  row-gap: 0, 0.5 rem;
-  max-width: 1200px;
-  margin: 0 auto;
+@media screen and (min-width: 577px) and (max-width: 1031px) {
+  .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 7rem 7rem;
+  }
+  .productos .card {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+    --bs-card-bg: #e3ae44;
+    margin-top: 1rem;
+    border-radius: 10%;
+    border: 2px solid;
+  }
+  .productos .card-img-top {
+    max-height: 118.83px;
+  }
+  .productos .card-body {
+    height: 250px;
+  }
 }
-
 /* Color Theme Swatches in Hex */
 /* .color-theme_Jardin-mediterraneo-colores-2-hex { color: #DD3C32; } ROJO
 .color-theme_Jardin-mediterraneo-colores-3-hex { color: #DC802B; } MOSTAZA
